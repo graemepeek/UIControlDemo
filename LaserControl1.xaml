@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="UILaserControl.LaserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UILaserControl"
+             d:DataContext="{d:DesignInstance Type=local:LaserControl1, IsDesignTimeCreatable=True}"
+             mc:Ignorable="d" Height="123.479" Width="985.273">
+    <Grid Margin="0,0,-55,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF395594" Offset="0.075"/>
+                <GradientStop Color="#FFFBFBFB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblLaser" Content="Laser Power" HorizontalAlignment="Left" Margin="7,-4,0,0" VerticalAlignment="Top" Height="34" Width="124" FontSize="20"/>
+        <Label x:Name="lblLaserStartDelay" Content="Laser Start Delay" HorizontalAlignment="Left" Margin="7,21,0,0" VerticalAlignment="Top" Height="34" Width="167" FontSize="20"/>
+        <TextBlock x:Name="tbLaserStartDelay" HorizontalAlignment="Left" Margin="179,28,0,0" Text="{Binding LaserStartDelay}" VerticalAlignment="Top" RenderTransformOrigin="-0.815,0.367" Width="104" FontSize="20" Height="22" Background="#FF6BF70A" TextAlignment="Center"/>
+        <Label x:Name="lblSpotWeld" Content="Spot Weld&#xD;&#xA;" HorizontalAlignment="Left" Margin="7,47,0,0" VerticalAlignment="Top" Height="34" Width="167" FontSize="20"/>
+        <TextBlock x:Name="tbSpotWeld" HorizontalAlignment="Left" Margin="179,55,0,0" TextWrapping="Wrap" Text="{Binding SpotWeld}" VerticalAlignment="Top" RenderTransformOrigin="-0.815,0.367" Width="104" FontSize="20" Height="22" Background="#FF6BF70A" TextAlignment="Center"/>
+        <TextBlock x:Name="tbLaserPower" HorizontalAlignment="Left" Margin="179,1,0,0" Text="{Binding LaserPower}" VerticalAlignment="Top" RenderTransformOrigin="-0.815,0.367" Width="104" FontSize="20" Height="22" Background="#FF6BF70A" TextAlignment="Center"/>
+        <Button x:Name="btnLaserEnable" Content="Laser" HorizontalAlignment="Left" Margin="431,12,0,0" VerticalAlignment="Top" Width="75" Height="35" Command="{Binding LaserEnable}" Click="btnLaserEnable_Click"/>
+        <Button x:Name="btnSpotWeld" Content="Spot Weld" HorizontalAlignment="Left" Margin="431,57,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="btnSpotWeld_Click"/>
+        <Label x:Name="lblCycleTime" Content="Cycle Time&#xA;" HorizontalAlignment="Left" Margin="7,76,0,0" VerticalAlignment="Top" Height="34" Width="167" FontSize="20"/>
+        <TextBlock x:Name="tbCycleTime" HorizontalAlignment="Left" Margin="179,82,0,0" TextWrapping="Wrap" Text="{Binding CycleTime}" VerticalAlignment="Top" RenderTransformOrigin="-0.815,0.367" Width="104" FontSize="20" Height="22" Background="#FF6BF70A" TextAlignment="Center"/>
+        <Label x:Name="lblCounter" Content="Counter&#xA;" HorizontalAlignment="Left" Margin="310,47,0,0" VerticalAlignment="Top" Height="34" Width="97" FontSize="20"/>
+        <TextBlock x:Name="tbCounter" HorizontalAlignment="Left" Margin="303,81,0,0" TextWrapping="Wrap" Text="{Binding Counter}" VerticalAlignment="Top" RenderTransformOrigin="-0.815,0.367" Width="104" FontSize="20" Height="22" Background="#FF6BF70A" TextAlignment="Center"/>
+    </Grid>
+</UserControl>
