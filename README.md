@@ -8,6 +8,8 @@ UI Control is a WPF UI Control for Beckhoff CNC HMI for controlling laser used f
 
 * **Power Control** and **Spot Welding** support.
 * Enable Control **Power**, **Spot Welding**
+* **Cycle Time Display**
+* **Product Counter Display**
 
 ## How It Works
 
@@ -29,4 +31,6 @@ Suitable for the Beckhoff CNC C# HMI
 
 </details>
 
-
+```diff
+- Use as is code example 
+```
